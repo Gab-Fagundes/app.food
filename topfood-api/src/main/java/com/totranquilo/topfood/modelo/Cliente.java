@@ -1,7 +1,9 @@
-package modelo;
+package com.totranquilo.topfood.modelo;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Cliente {
-	
+	@Autowired
 	private String nome;
 	private String email;
 	private String telefone;

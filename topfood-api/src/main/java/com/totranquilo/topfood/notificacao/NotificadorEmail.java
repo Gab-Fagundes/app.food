@@ -1,8 +1,8 @@
-package notificacao;
+package com.totranquilo.topfood.notificacao;
 
 import org.springframework.stereotype.Component;
 
-import modelo.Cliente;
+import com.totranquilo.topfood.modelo.Cliente;
 
 @Component
 public class NotificadorEmail {

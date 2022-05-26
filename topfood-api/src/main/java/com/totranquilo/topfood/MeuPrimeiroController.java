@@ -1,15 +1,18 @@
 package com.totranquilo.topfood;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import modelo.Cliente;
-import service.AtivacaoClienteService;
+import com.totranquilo.topfood.modelo.Cliente;
+import com.totranquilo.topfood.service.AtivacaoClienteService;
+
 
 @Controller
 public class MeuPrimeiroController {
+	
 	@Autowired
 	private AtivacaoClienteService ativacaoClienteService;
 	

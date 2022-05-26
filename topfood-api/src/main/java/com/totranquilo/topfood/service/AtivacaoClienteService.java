@@ -1,13 +1,13 @@
-package service;
+package com.totranquilo.topfood.service;
+
 
 import org.springframework.stereotype.Component;
-
-import modelo.Cliente;
-
-import notificacao.NotificadorEmail;
+import com.totranquilo.topfood.modelo.Cliente;
+import com.totranquilo.topfood.notificacao.NotificadorEmail;
 
 @Component
 public class AtivacaoClienteService {
+	
 	private NotificadorEmail notificador;
 	
 	public AtivacaoClienteService(NotificadorEmail notificador) {
@@ -21,5 +21,4 @@ public class AtivacaoClienteService {
 		
 		notificador.notificar(cliente, "Seu cadastro no sistema est� ativo!");
 	}
-
 }
